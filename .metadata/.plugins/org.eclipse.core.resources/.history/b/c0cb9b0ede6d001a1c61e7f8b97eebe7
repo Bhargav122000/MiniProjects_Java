@@ -1,0 +1,487 @@
+package other;
+import java.util.*;
+
+public class S_Display {
+	public static void main(String []args) {
+		
+			/*char str[30];
+			int i;
+			printf("\nEnter a String:");
+			scanf("%s", &str[i]);*/
+		int i;
+		String str;
+		Scanner ip = new Scanner(System.in);
+		str = ip.nextLine();
+			for(i=0;str.charAt(i)!='\0';i++)
+			{
+			if(str.charAt(i)==65 || str.charAt(i)==97)
+			{
+				for(int i1=1;i1<=5;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if(((j==1 || j==5) && i1!=1) || ((i1==1 || i1==3) && (j>1 && j<5)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==66 || str.charAt(i)==98)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if((((j==1 || j==5) && ((i1!=1 || j==1) && (i1!=4 || j==1) && (i1!=7 || j==1)))) || (((i1==1 || i1==4) || i1==7) && (j>1 && j<5)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==67 || str.charAt(i)==99)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if(((j==1) && (i1!=1 && i1!=7)) || (((i1==1 || i1==7) && (j>1))))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==68 || str.charAt(i)==100)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if(((j==1 || j==5) && ((i1!=1 || j==1) && (i1!=6 || j==1))) || ((i1==1 || i1==6) && (j>1 && j<5)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==69 || str.charAt(i)==101)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if(((j==1) || (i1==1 || i1==4 || i1==7)))
+						{
+							System.out.print("@");
+						}
+						else 
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==70 || str.charAt(i)==102)
+		        {
+				       for(int i1=1;i1<=5;i1++)
+			               {
+						for(int j=1;j<5;j++)
+						{
+							if((j==1) || (i1==1 || i1==3))
+							{		
+								System.out.print("@");
+					        }
+						        else								                                
+							{															                                 printf(" ");											        					   }
+																				                                      }
+		              		       System.out.print("\n");
+				        }
+			}
+			if(str.charAt(i)==71 || str.charAt(i)==103)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if(((j==1 && (i1!=1 && i1!=7)) || ((j==5) && (i1!=2 && i1!=3))) || (((i1==1 || (i1==4 && j==4) || i1==7 ) && (j>1))))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==72 || str.charAt(i)==104)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if((j==1 || j==5) || (i1==4))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==73 || str.charAt(i)==105)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if((j==3) || (i1!=2 && i1!=3 && i1!=4 && i1!=5))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==74 || str.charAt(i)==106)
+			{
+				for(int i1=1;i1<=5;i1++)
+				{
+					for(int j=1;j<=7;j++)
+					{
+						if(((j==4) || ((j==2) && (i1==4 || i1==5))) || (1i==1))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==75 || str.charAt(i)==107)
+			{
+				for(int i1=1;i1<=5;i1++)
+				{
+					for(int j=1;j<=4;j++)
+					{
+						if((j==1) || ((i1==1 && j==4) || (i1==2 && j==3) || (i1==3 && j==2) || (i1==4 && j==3) || (i1==5 && j==4)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==76 || str.charAt(i)==108)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if((j==1) || (i1==6))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==77 || str.charAt(i)==109)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=7;j++)
+					{
+						if((j==1 || j==7) || ((i1==2 && j==2) || (i1==3 && j==3) || (i1==4 && j==4) || (i1==3 && j==5) || (i1==2 && j==6)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==78 || str.charAt(i)==110)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=6;j++)
+					{
+						if((j==1 || j==6) || ((i1==2 && j==2) || (i1==3 && j==3) || (i1==4 && j==4) || (i1==5 && j==5)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==79 || str.charAt(i)==111)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=6;j++)
+					{
+						if((((j==1) && (i1!=1 && i1!=6)) || ((j==6) && (i1!=1 && i1!=6))) || ((i1==1 || i1==6) && (j>1 && j<6)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==80 || str.charAt(i)==112)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if(((j==1) || (j==5 && (i1==2 || i1==3))) || ((i1==1 || i1==4) && (j<5)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==81 || str.charAt(i)==113)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=6;j++)
+					{
+						if((((j==1) && (i1!=1 && i1!=6)) || ((j==6) && (i1!=1 && i1!=6) || ((i1==4 && j==4) || (i1==5 && j==5) || (i1==6 && j==6)))) || ((i1==1 || i1==6) && (j>1 && j<6)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==82 || str.charAt(i)==114)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if(((j==1) || (j==5 && (i1==2 || i1==3) || ((i1==5 && j==3) || (i1==6 && j==4) || (i1==7 && j==5)))) || ((i1==1 || i1==4) && (j<5)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==83 || str.charAt(i)==115)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if((((j==1) && (i1==2 || i1==3)) || ((j==5) && ((i1==5) || (i1==6)))) || ((i1==1 || i1==4 || i1==7) && (j>1 && j<5)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==84 || str.charAt(i)==116)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if((j==3) || (i1==1))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==85 || str.charAt(i)==117)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=5;j++)
+					{
+						if(((j==1 || j==5) && (i1!=6)) || ((i1==6 && (j>1 && j<5))))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==86 || str.charAt(i)==118)
+			{
+				for(int i1=1;i1<=5;i1++)
+				{
+					for(int j=1;j<=9;j++)
+					{
+						if((i1==1 && j==1) || (i1==2 && j==2) || (i1==3 && j==3) || (i1==4 && j==4) || (i1==5 && j==5) || (i1==4 && j==6) || (i1==3 && j==7) || (i1==2 && j==8) || (i1==1 && j==9))
+						{
+							System.out.print("@");
+						}
+						else 
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==87 || str.charAt(i)==119)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=7;j++)
+					{
+						if((j==1 || j==7) || ((i1==5 && j==2) || (i1==4 && j==3) || (i1==3 && j==4) || (i1==4 && j==5) || (i1==5 && j==6)))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==88 || str.charAt(i)==120)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=7;j++)
+					{
+						if(((i1==1 && (j==1 || j==7)) || (i1==2 && (j==2 || j==6)) || (i1==3 && (j==3 || j==5)) || (i1==4 && (j==4)) || (i1==5 && (j==3 || j==5)) || (i1==6 && (j==2 || j==6)) || (i1==7 && (j==1 || j==7))))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==89 || str.charAt(i)==121)
+			{
+				for(int i1=1;i1<=7;i1++)
+				{
+					for(int j=1;j<=7;j++)
+					{
+						if(((i1==1 && (j==1 || j==7)) || (i1==2 && (j==2 || j==6)) || (i1==3 && (j==3 || j==5)) || (i1==4 && (j==4)) || (i1==5 && (j==4)) || (i1==6 && (j==4)) || (i1==7 && (j==4))))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}
+			if(str.charAt(i)==90 || str.charAt(i)==122)
+			{
+				for(int i1=1;i1<=6;i1++)
+				{
+					for(int j=1;j<=6;j++)
+					{
+						if(((i1==1 || i1==6) || (i1==2 && (j==5)) || (i1==3 && (j==4)) || (i1==4 && (j==3)) || (i1==5 && (j==2))))
+						{
+							System.out.print("@");
+						}
+						else
+						{
+							System.out.print(" ");
+						}
+					}
+					System.out.print("\n");
+				}
+			}	
+			}
+			System.out.println();
+			System.out.println(str);	
+	}
+}

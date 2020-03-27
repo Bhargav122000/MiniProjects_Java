@@ -1,0 +1,71 @@
+import java.awt.*;
+import java.awt.event.*;
+
+public class Demo {
+	private Frame f;
+	private Panel pnl1,pnl2;
+	private Label lbl1;
+	private TextField tf1[];
+	private Button btn2;
+	
+	int n;
+	int pages[];
+	int i;
+	
+	public Demo() {
+		initialise();
+		add();
+		register();
+		
+		f.pack();
+		f.setVisible(true);
+	}
+	
+	public void initialise() {
+		n = 15;
+		f = new Frame("Page Scheduling");
+		
+		pnl1 = new Panel();pnl1.setBackground(Color.DARK_GRAY);
+		pnl2 = new Panel();pnl2.setBackground(Color.LIGHT_GRAY);
+		
+		lbl1 = new Label("Page References");
+		
+		tf1 = new TextField[n];
+		for(i=0;i<n;i++) {
+			tf1[i] = new TextField(3);
+			tf1[i].setBackground(Color.LIGHT_GRAY);
+		}
+		
+		btn2 = new Button("Get PageFaults");
+	}
+	
+	public void add() {
+		pnl1.add(lbl1);
+		for(i=0;i<n;i++)	pnl1.add(tf1[i]);
+		
+		pnl2.add(btn2);
+		
+		f.add(pnl1);
+		f.add(pnl2);
+		
+		f.setLayout(new GridLayout(2,1));
+	}
+	
+	public void register() {
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+		
+		btn2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+	}
+	
+	public static void main(String []args) {
+		new Demo();
+	}
+}

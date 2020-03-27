@@ -1,0 +1,121 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+
+public class Demo {
+	private JFrame f;
+	private JPanel pnl1,pnl2,pnl3,pnl4,pnl5;
+	private JLabel lbl1,lbl2,lbl3,lbl4,lbl5;
+	private JTextField tf1[],tf2[],tf3[],tf4;
+	private JButton btn5;
+	
+	int n;
+	int at[];
+	int bt[];
+	int p[];
+	int tQ;
+	
+	public Demo() {
+		n = 6;
+		
+		initialise();
+		add();
+		register();
+		
+		f.pack();
+		f.setVisible(true);
+	}
+	
+	public void initialise() {
+		int i;
+		
+		f = new JFrame("Scheduling Algos");
+		
+		pnl1 = new JPanel();
+		pnl2 = new JPanel();
+		pnl3 = new JPanel();
+		pnl4 = new JPanel();
+		pnl5 = new JPanel();
+		
+		lbl1 = new JLabel("Input-Processes Arrival Times");
+		lbl2 = new JLabel("Input-Processes Burst Times");
+		lbl3 = new JLabel("Input-Processes Priorities(1-high)");
+		lbl4 = new JLabel("Input-Time Quantum");
+		lbl5 = new JLabel("Press this button to see the result");
+		
+		tf1 = new JTextField[n];
+		for(i=0;i<n;i++)	tf1[i] = new JTextField(3);
+		tf2 = new JTextField[n];
+		for(i=0;i<n;i++)	tf2[i] = new JTextField(3);
+		tf3 = new JTextField[n];
+		for(i=0;i<n;i++)	tf3[i] = new JTextField(3);
+		tf4 = new JTextField(2);
+		
+		btn5 = new JButton("Get result");
+	}
+	
+	public void add() {
+		int i;
+		
+		pnl1.add(lbl1);
+		for(i=0;i<n;i++)	pnl1.add(tf1[i]);
+		pnl2.add(lbl2);
+		for(i=0;i<n;i++)	pnl2.add(tf2[i]);
+		pnl3.add(lbl3);
+		for(i=0;i<n;i++)	pnl3.add(tf3[i]);
+		pnl4.add(lbl4);
+		pnl4.add(tf4);
+		pnl5.add(lbl5);
+		pnl5.add(btn5);
+		
+		f.add(pnl1);
+		f.add(pnl2);
+		f.add(pnl3);
+		f.add(pnl4);
+		f.add(pnl5);
+		
+		pnl1.setLayout(new FlowLayout());
+		pnl2.setLayout(new FlowLayout());
+		pnl3.setLayout(new FlowLayout());
+		pnl4.setLayout(new FlowLayout());
+		pnl5.setLayout(new FlowLayout());
+		
+		f.setLayout(new GridLayout(5,1));
+	}
+	
+	public void register() {
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+		
+		btn5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int i;
+				
+				at = new int[n];
+				bt = new int[n];
+				p = new int[n];
+				
+				for(i=0;i<n;i++)	at[i] = Integer.parseInt(tf1[i].getText());
+				for(i=0;i<n;i++)	bt[i] = Integer.parseInt(tf2[i].getText());
+				for(i=0;i<n;i++)	p[i] = Integer.parseInt(tf3[i].getText());
+				tQ = Integer.parseInt(tf4.getText());
+				
+				new FCFS(at,bt);
+				new SJF_NP(at,bt);
+				new SJF_P(at,bt);
+				new PJF_NP(at,bt,p);
+				new PJF_P(at,bt,p);
+				new RRS(at,bt,tQ);
+				new Display();
+			}
+		});
+	}
+	
+	public static void main(String []args) {
+		new Demo();
+	}
+}

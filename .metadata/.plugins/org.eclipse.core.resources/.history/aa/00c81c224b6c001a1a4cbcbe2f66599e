@@ -1,0 +1,94 @@
+import java.awt.*;
+import java.awt.event.*;
+
+public class Demo {
+	private Frame f;
+	private Panel pnl1;
+	private Label lbl1;
+	private TextField tf1[];
+	private Button btn1;
+	
+	int n;
+	int pages[];
+	int i,j,k;
+	int fifo_frame[][],lru_frame[][],optimal_frame[][];
+	FIFO obj1;
+	LRU obj2;
+	Optimal obj3;
+	
+	private Panel pnl2,pnl3,pnl4,pnl5;
+	private 
+	
+	public Demo() {
+		initialise();
+		add();
+		register();
+		
+		f.pack();
+		f.setVisible(true);
+	}
+	
+	public void initialise() {
+		n = 15;
+		f = new Frame("Page Scheduling");
+		
+		pnl1 = new Panel();pnl1.setBackground(Color.GRAY);
+		
+		lbl1 = new Label("Page References");
+		
+		tf1 = new TextField[n];
+		for(i=0;i<n;i++) {
+			tf1[i] = new TextField(3);
+			tf1[i].setBackground(Color.LIGHT_GRAY);
+		}
+		
+		btn1 = new Button("Get PageFaults");
+	}
+	
+	public void add() {
+		pnl1.add(lbl1);
+		for(i=0;i<n;i++)	pnl1.add(tf1[i]);
+		pnl1.add(btn1);
+		
+		f.add(pnl1);
+		
+		f.setLayout(new GridLayout(1,1));
+	}
+	
+	public void register() {
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+		
+		btn1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				pages = new int[n];
+				for(i=0;i<n;i++)	pages[i] = Integer.parseInt(tf1[i].getText());
+				
+				obj1 = new FIFO(pages);
+				obj2 = new LRU(pages);
+				obj3 = new Optimal(pages);
+				
+				fifo_frame = new int[n][3];
+				lru_frame = new int[n][3];
+				optimal_frame = new int[n][3];
+				
+				fifo_frame = obj1.fifo();
+				lru_frame = obj2.lru();
+				optimal_frame = obj3.optimal();
+				
+				rearrange();
+			}
+		});
+	}
+	
+	public void rearrange() {
+		
+	}
+	
+	public static void main(String []args) {
+		new Demo();
+	}
+}

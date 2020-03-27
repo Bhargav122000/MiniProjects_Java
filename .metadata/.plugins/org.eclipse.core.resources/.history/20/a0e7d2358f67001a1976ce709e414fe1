@@ -1,0 +1,72 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class GetResult extends JFrame{
+
+	private static final long serialVersionUID = 1L;
+	
+	private JLabel lbl;
+	private JTextField tf;
+	Graphics g;
+	private int actual[],obtained[];
+	
+	public GetResult() {
+		
+		super();
+		
+		lbl = new JLabel("Result status-");
+		tf = new JTextField(40);
+		
+		this.add(lbl);
+		this.add(tf);
+		this.setLayout(new FlowLayout());
+		this.pack();
+		
+		this.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+	
+	public void getOP(int []actual,int []obtained) {
+		this.actual = actual;
+		this.obtained = obtained;
+	}
+	
+	public void paint(Graphics g) {
+		super.paint(g);
+		int i;
+		int gap = 80;
+		
+		for(i=0;i<7;i++) {
+			if(actual[i] != obtained[i]) {
+				tf.setText("You got the wrong pattern");
+				break;
+			}
+		}
+		
+		if(i == 7)	tf.setText("You got the correct pattern");
+		
+		g.setColor(Color.YELLOW);
+		
+		if(actual[0] == 1)	g.fillRect(30,80,34,2);
+		if(actual[1] == 1)	g.fillRect(62,80,2,30);
+		if(actual[2] == 1)	g.fillRect(62,112,2,30);
+		if(actual[3] == 1)	g.fillRect(30,140,34,2);
+		if(actual[4] == 1)	g.fillRect(30,112,2,30);
+		if(actual[5] == 1)	g.fillRect(30,80,2,30);
+		if(actual[6] == 1)	g.fillRect(30,110,34,2);
+		
+		g.setColor(Color.MAGENTA);
+		
+		if(obtained[0] == 1)	g.fillRect(30+gap,80,34,2);
+		if(obtained[1] == 1)	g.fillRect(62+gap,80,2,30);
+		if(obtained[2] == 1)	g.fillRect(62+gap,112,2,30);
+		if(obtained[3] == 1)	g.fillRect(30+gap,140,34,2);
+		if(obtained[4] == 1)	g.fillRect(30+gap,112,2,30);
+		if(obtained[5] == 1)	g.fillRect(30+gap,80,2,30);
+		if(obtained[6] == 1)	g.fillRect(30+gap,110,34,2);
+	}
+}

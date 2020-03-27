@@ -1,0 +1,41 @@
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import java.awt.*;
+
+
+public class Pic_sample extends JFrame{
+	
+	public Pic_sample() {
+		super();
+		pack();
+		setVisible(true);
+	}
+	
+	public void paint(Graphics g) {
+		super.paint(g);
+		
+		g.fillRect(50,200,1,300);
+		g.setColor(Color.ORANGE);
+		g.fillRect(51,225,100,10);
+		g.fillRect(51,275,100,10);
+		g.fillRect(51,325,1000,10);
+		g.fillRect(51,375,100,10);
+		g.fillRect(51,425,100,10);
+		g.fillRect(51,475,100,10);
+		
+	}
+	
+	
+	public static void main(String args[]) {
+		/*JFrame frame = new JFrame();
+  		ImageIcon icon = new ImageIcon("C:\\Users\\Bhargav\\Downloads\\trentBoult.jpg");
+  		JLabel label = new JLabel(icon);
+  		frame.add(label);
+  		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  		frame.pack();
+  		frame.setVisible(true);
+		*/
+		new Pic_sample();
+	}
+}

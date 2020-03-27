@@ -1,0 +1,109 @@
+package other;
+import java.util.*;
+
+public class Letter_ {
+	Scanner ip = new Scanner(System.in);
+	char c;
+	
+	public Letter_() {
+		System.out.println("Enter a character:");
+		c = ip.nextLine().charAt(0);
+	}
+	
+	public void display() {
+		display_0();
+		display_1();
+		display_2();
+		display_3();
+		display_4();
+	}
+	
+	public void display_0() {
+		int j;
+		for(j=0;j<5;j++) {
+			if(c=='A' || c=='M' || c=='O' || c=='Q') {
+				if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s",c));
+				else						System.out.print(String.format("%1s",""));
+			}
+			if(c=='B' || c=='D' || c=='P' || c=='R') {
+				if(j==0 || j==1 || j==2 || j==3) 	System.out.print(String.format("%1s",c));
+				else								System.out.print(String.format("%1s",""));
+			}
+			if(c=='C' || c=='E' || c=='F' || c=='G' || c=='S') {
+				if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s",c));
+				else								System.out.print(String.format("%1s",""));
+			}
+			if(c=='H' || c=='K' || c=='N' || c=='U' || c=='V' || c=='W' || c=='X' || c=='Y') {
+				if(j==0 || j==4)	System.out.print(String.format("%1s",c));
+				else				System.out.print(String.format("%1s",""));
+			}
+			if(c=='I' || c=='J' || c=='T' || c=='Z') {
+				System.out.print(String.format("%1s",c));
+			}
+			if(c=='L') {
+				if(j==0)	System.out.print(String.format("%1s",c));
+				else		System.out.print(String.format("%1s",""));
+			}
+		}
+		
+	}
+	
+	public void display_1() {
+		int j;
+		for(j=0;j<5;j++) {
+			if(c=='A' || c=='B' || c=='D' || c=='H' || c=='O' || c=='P') {
+				if(j==0 || j==4)	System.out.print(String.format("%1s",c));
+				else				System.out.print(String.format("%1s",""));
+			}
+			if(c=='Q' || c=='R' || c=='U' || c=='V' || c=='W' || c=='Y') {
+				if(j==0 || j==4)	System.out.print(String.format("%1s",c));
+				else				System.out.print(String.format("%1s",""));
+			}
+			if(c=='C' || c=='E' || c=='F' || c=='G' || c=='L' || c=='S') {
+				if(j==0)	System.out.print(String.format("%1s",c));
+				else		System.out.print(String.format("%1s",""));
+			}
+			if(c=='I' || c=='T') {
+				if(j==2)	System.out.print(String.format("%1s",c));
+				else		System.out.print(String.format("%1s",""));
+			}
+			if(c=='J' || c=='Z') {
+				if(j==3)	System.out.print(String.format("%1s",c));
+				else		System.out.print(String.format("%1s",""));
+			}
+			if(c=='K') {
+				if(j==0 || j==3)	System.out.print(String.format("%1s",c));
+				else				System.out.print(String.format("%1s",""));
+			}
+			if(c=='M') {
+				if(j==0 || j==2 || j==4)	System.out.print(String.format("%1s",c));
+				else						System.out.print(String.format("%1s",""));
+			}
+			if(c=='N') {
+				if(j==0 || j==1 || j==4)	System.out.print(String.format("%1s",c));
+				else						System.out.print(String.format("%1s",""));
+			}
+			if(c=='X') {
+				if(j==1 || j==3)	System.out.print(String.format("%1s",c));
+				else				System.out.print(String.format("%1s",""));
+			}
+		}
+	}
+	
+	public void display_2() {
+		
+	}
+	
+	public void display_3() {
+		
+	}
+	
+	public void display_4() {
+		
+	}
+	
+	public static void main(String []args) {
+		Letter_ obj = new Letter_();
+		obj.display();
+	}
+}

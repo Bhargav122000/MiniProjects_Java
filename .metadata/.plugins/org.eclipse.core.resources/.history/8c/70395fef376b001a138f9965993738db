@@ -1,0 +1,58 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Display {
+	private JFrame f;
+	private JPanel pnl1,pnl2,pnl3,pnl4,pnl5,pnl6;
+	
+	public Display() {
+		getFrame();
+		displayFrame();
+	}
+	
+	public void getFrame() {
+		f = new JFrame("Results");
+		
+		pnl1 = new JPanel();
+		pnl2 = new JPanel();
+		pnl3 = new JPanel();
+		pnl4 = new JPanel();
+		pnl5 = new JPanel();
+		pnl6 = new JPanel();
+		
+		pnl1 = 	FCFS.pnl;
+		pnl2 = SJF_P.pnl;
+		pnl3 = SJF_NP.pnl;
+		pnl4 = PJF_P.pnl;
+		pnl5 = PJF_NP.pnl;
+		pnl6 = RRS.pnl;
+		
+		f.add(pnl1);
+		f.add(pnl2);
+		f.add(pnl3);
+		f.add(pnl4);
+		f.add(pnl5);
+		f.add(pnl6);
+
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+	
+	public void displayFrame() {
+		pnl1.setLayout(new GridLayout(5,1));pnl1.setBackground(Color.YELLOW);
+		pnl2.setLayout(new GridLayout(5,1));pnl2.setBackground(Color.GREEN);
+		pnl3.setLayout(new GridLayout(5,1));pnl3.setBackground(Color.GREEN);
+		pnl4.setLayout(new GridLayout(5,1));pnl4.setBackground(Color.YELLOW);
+		pnl5.setLayout(new GridLayout(5,1));pnl5.setBackground(Color.YELLOW);
+		pnl6.setLayout(new GridLayout(5,1));pnl6.setBackground(Color.GREEN);
+		
+		f.setLayout(new GridLayout(3,2,20,20));
+		
+		f.pack();
+		f.setVisible(true);
+	}
+}

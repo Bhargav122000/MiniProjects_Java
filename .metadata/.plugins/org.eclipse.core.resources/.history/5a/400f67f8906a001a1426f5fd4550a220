@@ -1,0 +1,66 @@
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+
+public class WaitingTimes extends JFrame{
+	private int wt_fcfs;
+	private int wt_sjf_np;
+	private int wt_sjf_p;
+	private int wt_pjf_np;
+	private int wt_pjf_p;
+	private int wt_rrs;
+	
+	private JLabel lbl1,lbl2,lbl3,lbl4,lbl5,lbl6;
+	private JTextField tf1,tf2,tf3,tf4,tf5,tf6;
+	
+	public WaitingTimes() {
+		super();
+		initialise();
+		add();
+		register();
+		
+		pack();
+		setVisible(true);
+	}
+	
+	public void initialise() {
+		lbl1 = new JLabel("FCFS");
+		lbl2 = new JLabel("SJF(NP)");
+		lbl3 = new JLabel("SJF(P)");
+		lbl4 = new JLabel("PJF(NP)");
+		lbl5 = new JLabel("PJF(P)");
+		lbl6 = new JLabel("RRS");
+		
+		tf1 = new JTextField(2);	tf1.setBackground(Color.MAGENTA);
+		tf2 = new JTextField(2);	tf2.setBackground(Color.GRAY);
+		tf3 = new JTextField(2);	tf3.setBackground(Color.YELLOW);
+		tf4 = new JTextField(2);	tf4.setBackground(Color.RED);
+		tf5 = new JTextField(2);	tf5.setBackground(Color.GREEN);
+		tf6 = new JTextField(2);	tf6.setBackground(Color.ORANGE);		
+	}
+	
+	public void add() {
+		add(lbl1);add(tf1);
+		add(lbl2);add(tf2);
+		add(lbl3);add(tf3);
+		add(lbl4);add(tf4);
+		add(lbl5);add(tf5);
+		add(lbl6);add(tf6);
+
+	}
+	
+	public void register() {
+		this.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				setVisible(false);
+			}
+		});
+	}
+	
+	public void paint(Graphics g) {
+		super.paint(g);
+		
+		g.setColor(Color.BLACK);
+		g.drawLine(50,200,50,500);
+	}
+}

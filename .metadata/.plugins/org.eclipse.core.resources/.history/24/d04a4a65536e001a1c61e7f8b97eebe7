@@ -1,0 +1,671 @@
+package other;
+
+public class Letter {
+	public static void main(String []args) {
+		int i,j;
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					System.out.print(String.format("%1s","@"));
+				}
+				if(i==3) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+				}
+				if(i==3) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2|| j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					System.out.print(String.format("%1s","@"));
+				}
+				if(i==3) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					System.out.print(String.format("%1s","@"));
+				}
+				if(i==3) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					System.out.print(String.format("%1s","@"));
+				}
+				if(i==3) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					System.out.print(String.format("%1s","@"));
+				}
+				if(i==1) {
+					if(j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					System.out.print(String.format("%1s","@"));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					System.out.print(String.format("%1s","@"));
+				}
+				if(i==1) {
+					if(j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==1 || j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==2 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==2 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==1 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==2 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==2 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					System.out.print(String.format("%1s","@"));
+				}
+				if(i==1) {
+					if(j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==1 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==0 || j==2 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==2 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==1 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==2)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==1 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println();
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(i==0) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else		System.out.print(String.format("%1s",""));
+				}
+				if(i==1) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==2) {
+					if(j==1 || j==2 || j==3 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==3) {
+					if(j==0 || j==4)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+				if(i==4) {
+					if(j==1 || j==2 || j==3)	System.out.print(String.format("%1s","@"));
+					else				System.out.print(String.format("%1s",""));
+				}
+			}
+			System.out.println();
+		}
+	}
+}
